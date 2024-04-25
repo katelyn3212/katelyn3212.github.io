@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Personal Portfolio</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class= "section1">
+    <nav>
+      <img src="logo.jpeg" alt= "Logo" class="logo">
+      <ul>
+        <li><a hrf="#">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li> <!-- Link to the About page -->
+
+         <li><a href="portfolio.html">PORTFOLIO</a></li> 
+        <li><a href="services.html">SERVICES</a></li> 
+        <li><a href="hireme.html">CONNECT</a></li> 
+      </ul>
+    </nav>
+    <div class="section2"
+      <h1>Hi, I'm <span>Katelyn Cheesman</span></h1>
+      <p>Welcome to my official portfolio website where you
+      <br> can find information about me and my tech journey.</p>
+      <button onclick="downloadResume()">DOWNLOAD RESUME</button>
+
+      <script>
+        function downloadResume() {
+          var resumeUrl = 'myResume.pdf';
+          var link = document.createElement('a');
+          link.href = resumeUrl;
+          link.download = 'KatCheResume.pdf'; 
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+      </script>
+
+    </div>
+    </div>
+</body>
+
+</html>
